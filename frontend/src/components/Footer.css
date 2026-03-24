@@ -1,0 +1,11 @@
+.footer { background: #232f3e; color: #ccc; margin-top: 3rem; }
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+}
+.footer-top h4 { color: #fff; margin-bottom: 0.75rem; font-size: 0.95rem; }
+.footer-top a { display: block; font-size: 0.85rem; margin-bottom: 0.4rem; color: #ccc; }
+.footer-top a:hover { color: #fff; }
+.footer-bottom { background: #131921; text-align: center; padding: 1rem; font-size: 0.8rem; }

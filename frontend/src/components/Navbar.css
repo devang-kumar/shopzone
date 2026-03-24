@@ -1,0 +1,126 @@
+.navbar {
+  background: #131921;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f90;
+  white-space: nowrap;
+}
+
+.navbar-search {
+  flex: 1;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 700px;
+}
+
+.navbar-search input {
+  flex: 1;
+  padding: 0.55rem 1rem;
+  border: none;
+  font-size: 0.95rem;
+  outline: none;
+  color: #111;
+}
+
+.navbar-search button {
+  padding: 0 1rem;
+  background: #f90;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: border-color 0.2s;
+}
+.nav-btn:hover { border-color: #fff; }
+
+.cart-btn { position: relative; }
+.cart-badge {
+  position: absolute;
+  top: -6px; right: -6px;
+  background: #f90;
+  color: #111;
+  border-radius: 50%;
+  width: 18px; height: 18px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.nav-dropdown { position: relative; }
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  color: #111;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  min-width: 160px;
+  overflow: hidden;
+  z-index: 200;
+}
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #111;
+  transition: background 0.15s;
+}
+.dropdown-menu a:hover,
+.dropdown-menu button:hover { background: #f3f4f6; }
+
+.navbar-categories {
+  background: #232f3e;
+  display: flex;
+  gap: 0;
+  padding: 0 1.5rem;
+  overflow-x: auto;
+}
+.navbar-categories a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.navbar-categories a:hover { background: rgba(255,255,255,0.1); }
